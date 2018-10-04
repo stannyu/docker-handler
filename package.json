@@ -1,0 +1,19 @@
+{
+  "name": "docker-handler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanyudzitski/docker-handler.git"
+  },
+  "author": "Stas Yudzitski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanyudzitski/docker-handler/issues"
+  },
+  "homepage": "https://github.com/stanyudzitski/docker-handler#readme"
+}
