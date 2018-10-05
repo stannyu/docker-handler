@@ -1,6 +1,7 @@
 const express = require("express");
 const redis = require("redis");
 const bodyParser = require("body-parser");
+const process = require("process");
 
 const app = express();
 const client = redis.createClient({
@@ -20,7 +21,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/random', (req, res) => {
-  res.json('Random Output')
+  res.json('Random Output');
 });
 
 const globalAppPort = process.env.PORT || 3000;
