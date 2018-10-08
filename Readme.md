@@ -17,9 +17,10 @@
 
 ```docker run -it <container id> sh``` **running linux command shell, command that helps to execute different commands inside running container simultaneously**<br><br>
 
+### BUILDING OWN IMAGE ###
 
 ```docker build -t stanislauy/<image name>:latest<version>```  **build image with custom name**<br><br>
 
-###BUILDING OWN IMAGE###
+```docker run -p [input PORT]:[inner PORT] <image name>``` **set up port to map port inside container**<br><br>
 
 

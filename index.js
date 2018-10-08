@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   client.get('visits', (err, visits) => {
-    res.json(`Number of visits is: ${visits}`);
+    res.json(`Number of visits is: ${visits}!!!`);
     client.set('visits', parseInt(visits) + 1)
   })
 });
