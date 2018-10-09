@@ -46,6 +46,12 @@ node-app:
 ```
 Creating node-app service using Dockerfile in current directory (by ```build: .``` command where dot is a path). Setting restart option to always (always restarts node-app in case of process.exit(<status code>)). Sets ports mapping from outside of container (```-``` specifies an array in *.yml files).
 
+```docker-compose up -d``` **start docker containers in background.**
+
+```docker-compose down``` **stops all docker containers.**
+
+```docker-compose ps``` **shows running containers.**
+
 
 
 
