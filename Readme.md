@@ -19,8 +19,34 @@
 
 ### BUILDING OWN IMAGE ###
 
-```docker build -t stanislauy/<image name>:latest<version>```  **build image with custom name**<br><br>
+```docker build -t stanislauy/<image name>:latest<version> .```  **build image with custom name. Dot represents path.**<br>
 
-```docker run -p [input PORT]:[inner PORT] <image name>``` **set up port to map port inside container**<br><br>
+```docker run stanislauy/<image name>``` **Start running custom image.**<br>
+
+```docker run -p [input PORT]:[inner PORT] <image name>``` **set up port to map port inside container**<br>
+
+### DOCKER COMPOSE ###
+```version: '3'``` 
+Specifies version of docker compose that we want to use.<br><br>
+
+```services: ``` Section that sets up different types of containers.<br><br>
+
+```
+redis-server:
+     image: 'redis'
+```
+Specifying the container we want to create using image (redis in this case).<br><br>
+   
+```
+node-app:
+    restart: always
+    build: .
+    ports:
+      - "4001:3000"
+```
+Creating node-app service using Dockerfile in current directory (by ```build: .``` command where dot is a path). Setting restart option to always (always restarts node-app in case of process.exit(<status code>)). Sets ports mapping from outside of container (```-``` specifies an array in *.yml files).
+
+
+
 
 
