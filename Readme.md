@@ -25,6 +25,8 @@
 
 ```docker run -p [input PORT]:[inner PORT] <image name>``` **set up port to map port inside container**<br>
 
+```docker build -f <Custom FileName> .``` **starts container with custom docker file name. (Dockerfile.dev for example)**
+
 ### DOCKER COMPOSE ###
 ```version: '3'``` 
 Specifies version of docker compose that we want to use.<br><br>
@@ -51,6 +53,13 @@ Creating node-app service using Dockerfile in current directory (by ```build: .`
 ```docker-compose down``` **stops all docker containers.**
 
 ```docker-compose ps``` **shows running containers.**
+
+
+### VOLUME ###
+
+```docker run -p [PORT outside]:[PORT inside] -v /app/node_modules -v $(pwd):/app <image id>``` <br>
+**-v $(pwd):/app maps Present Working Directory (pwd) to app folder inside container.<br>
+-v /app/node_modules - Put bookmark on node_modules folder.**
 
 
 
