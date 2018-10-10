@@ -9,7 +9,8 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Build react here!
+            Is this a frameless screen?<br></br>
+            Yes, it is.
           </p>
           <a
             className="App-link"

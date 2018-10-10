@@ -58,7 +58,7 @@ Creating node-app service using Dockerfile in current directory (by ```build: .`
 ### VOLUME ###
 
 ```docker run -p [PORT outside]:[PORT inside] -v /app/node_modules -v $(pwd):/app <image id>``` <br>
-**-v $(pwd):/app maps present working directory (pwd) to app folder inside container.<br>
+**-v $(pwd):/app maps Present Working Directory (pwd) to app folder inside container.<br>
 -v /app/node_modules - Put bookmark on node_modules folder.**
 
 
