@@ -17,6 +17,8 @@
 
 ```docker run -it <container id> sh``` **running linux command shell, command that helps to execute different commands inside running container simultaneously**<br><br>
 
+```docker run <imageId> <command>``` **run specific command of builded image. (npm run test, for example)**
+
 ### BUILDING OWN IMAGE ###
 
 ```docker build -t stanislauy/<image name>:latest<version> .```  **build image with custom name. Dot represents path.**<br>

@@ -12,6 +12,7 @@ class App extends Component {
             Is this a frameless screen?<br></br>
             Yes, it is.
           </p>
+          <img className="app_img" src="http://theinspirationgrid.com/app/uploads/2018/09/illustration-hauchard-07.jpg" alt=""/>
           <a
             className="App-link"
             href="https://reactjs.org"
