@@ -10,7 +10,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Is this a frameless screen?<br></br>
-            Yes, it is.
+            Yes, it is!
           </p>
           <img className="app_img" src="http://theinspirationgrid.com/app/uploads/2018/09/illustration-hauchard-07.jpg" alt=""/>
           <a
