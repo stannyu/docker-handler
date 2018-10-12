@@ -1,4 +1,5 @@
 ## DOCKER COMMANDS   ##
+```docker build .``` **running from root dir builds container with Dockerfile**
 ```docker ps``` **shows running containers**<br><br>
 ```docker ps —all``` **show all containers running and stopped already.**<br><br>
 ```docker images``` **show images**<br><br>
