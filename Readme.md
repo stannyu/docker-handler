@@ -1,3 +1,7 @@
+## Link to course ##
+can be found [here](https://coursehunter.net/course/docker-i-kubernetes-polnoe-rukovodstvo)
+
+
 ## DOCKER COMMANDS   ##
 ```docker build .``` **running from root dir builds container with Dockerfile**
 ```docker ps``` **shows running containers**<br><br>
