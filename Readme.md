@@ -2,12 +2,14 @@
 can be found [here](https://coursehunter.net/course/docker-i-kubernetes-polnoe-rukovodstvo)
 
 
-## DOCKER COMMANDS   ##
+## DOCKER COMMANDS ##
 ```docker build .``` **running from root dir builds container with Dockerfile**
 ```docker ps``` **shows running containers**<br><br>
 ```docker ps —all``` **show all containers running and stopped already.**<br><br>
 ```docker images``` **show images**<br><br>
-```docker run <image-name> ```  **run image (create & start), can be started with id of image**<br><br>
+```docker create [IMAGE_NAME]``` **creates container out of image but not runs it ( use prior ```docker start [CONTAINER_ID]```).**<br><br>
+```docker start —a [CONTAINER_ID]``` **runs selected with id container, where ```-a``` means that it will provide output ( without it wouldn't ).**<br><br>
+```docker run <image-name>``` **run image (create & start), can be started with id of image. replaces ```docker create [IMAGE_NAME] + docker start —a [CONTAINER_ID]```**<br><br>
 ```docker system prune``` **remove old containers**<br><br>
 ```docker system prune -a``` **remove old containers, and images that are unused**<br><br>
 ```docker images -a``` **remove images**<br><br>
